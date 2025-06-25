@@ -46,7 +46,7 @@ function LandingPage(){
                 
                 <div className={style.review}>
                     <div className={style.imgText}>
-                        <img src="/images/person1.avif" alt="" className={style.personImage} />
+                        <img src="/images/person1.avif" loading="lazy" alt="" className={style.personImage} />
                         <p> <span>Fred M.</span><br></br><small>⭐⭐⭐⭐⭐</small></p>
                     </div>
                     <p>"I found the most amazing vintage denim jacket! The quality is incredible and it arrived perfectly cleaned and packaged. Will definitely shop here again!"</p>
@@ -54,7 +54,7 @@ function LandingPage(){
 
                 <div className={style.review}>
                     <div className={style.imgText}>
-                        <img src="/images/person2.avif" alt="" className={style.personImage} />
+                        <img src="/images/person2.avif" loading="lazy" alt="" className={style.personImage} />
                         <p> <span>Jane D.</span><br></br><small>⭐⭐⭐⭐⭐</small></p>
                     </div>
                     <p>"The leather jacket I purchased looks even better in person than in the photos. Customer service was excellent when I had questions about care instructions. Highly recommend!"</p>
@@ -62,7 +62,7 @@ function LandingPage(){
 
                 <div className={style.review}>
                     <div className={style.imgText}>
-                        <img src="/images/person3.avif" alt="" className={style.personImage} />
+                        <img src="/images/person3.avif" loading="lazy" alt="" className={style.personImage} />
                         <p> <span>Michael S.</span><br></br><small>⭐⭐⭐⭐⭐</small></p>
                     </div>
                     <p>"The quality of the items is outstanding. I purchased a vintage leather bag and it's become my favorite accessory. Thank you, KLADI!"</p>
@@ -70,7 +70,7 @@ function LandingPage(){
 
                 <div className={style.review}>
                     <div className={style.imgText}>
-                        <img src="/images/person4.avif" alt="" className={style.personImage} />
+                        <img src="/images/person4.avif" loading="lazy" alt="" className={style.personImage} />
                         <p> <span>Sarah L.</span><br></br><small>⭐⭐⭐⭐⭐</small></p>
                     </div>
                     <p>"I love the concept of second-hand shopping, and KLADI does it so well. The items are always in great condition and the prices are unbeatable!"</p>
@@ -88,26 +88,26 @@ function LandingPage(){
             <div className={style.gallery}>
                 <h1>Gallery</h1>
                 <div className={style.images}>
-                    <img src="/images/store4.avif" alt="Store Image 4" />
-                    <img src="/images/store.avif" alt="Store Image 1" />
-                    <img src="/images/store2.avif" alt="Store Image 2" />
-                    <img src="/images/store3.avif" alt="Store Image 3" />
-                    <img src="/images/store5.avif" alt="Store Image 5" />
-                    <img src="/images/store6.avif" alt="Store Image 6" />
-                    <img src="/images/store7.avif" alt="Store Image 7" />
-                    <img src="/images/store8.avif" alt="Store Image 8" />
-                    <img src="/images/store9.avif" alt="Store Image 9" />
-                    <img src="/images/store10.avif" alt="Store Image 10" />
-                    <img src="/images/store11.avif" alt="Store Image 11" />
-                    <img src="/images/store12.avif" alt="Store Image 12" />
-                    <img src="/images/store13.avif" alt="Store Image 13" />
-                    <img src="/images/store14.avif" alt="Store Image 14" />
-                    <img src="/images/store15.avif" alt="Store Image 15" />
-                    <img src="/images/store16.avif" alt="Store Image 16" />
-                    <img src="/images/store17.avif" alt="Store Image 17" />
-                    <img src="/images/store18.avif" alt="Store Image 18" />
-                    <img src="/images/store19.avif" alt="Store Image 19" />
-                    <img src="/images/store20.avif" alt="Store Image 20" />
+                    <img src="/images/store4.avif" loading="lazy" alt="Store Image 4" />
+                    <img src="/images/store.avif" loading="lazy" alt="Store Image 1" />
+                    <img src="/images/store2.avif" loading="lazy" alt="Store Image 2" />
+                    <img src="/images/store3.avif" loading="lazy" alt="Store Image 3" />
+                    <img src="/images/store5.avif" loading="lazy" alt="Store Image 5" />
+                    <img src="/images/store6.avif" loading="lazy" alt="Store Image 6" />
+                    <img src="/images/store7.avif" loading="lazy" alt="Store Image 7" />
+                    <img src="/images/store8.avif" loading="lazy" alt="Store Image 8" />
+                    <img src="/images/store9.avif" loading="lazy" alt="Store Image 9" />
+                    <img src="/images/store10.avif" loading="lazy" alt="Store Image 10" />
+                    <img src="/images/store11.avif" loading="lazy" alt="Store Image 11" />
+                    <img src="/images/store12.avif" loading="lazy" alt="Store Image 12" />
+                    <img src="/images/store13.avif" loading="lazy" alt="Store Image 13" />
+                    <img src="/images/store14.avif" loading="lazy" alt="Store Image 14" />
+                    <img src="/images/store15.avif" loading="lazy" alt="Store Image 15" />
+                    <img src="/images/store16.avif" loading="lazy" alt="Store Image 16" />
+                    <img src="/images/store17.avif" loading="lazy" alt="Store Image 17" />
+                    <img src="/images/store18.avif" loading="lazy" alt="Store Image 18" />
+                    <img src="/images/store19.avif" loading="lazy" alt="Store Image 19" />
+                    <img src="/images/store20.avif" loading="lazy" alt="Store Image 20" />
 
                 </div>
             </div>
@@ -133,7 +133,7 @@ function LandingPage(){
                 <div className={style.team}>
                     <div className={style.teamMember}>
                         <div className={style.topArrange}>
-                            <img src="/images/team1.avif" alt="Team Member 1" />
+                            <img src="/images/team1.avif" loading="lazy" alt="Team Member 1" />
                             <h2>Jane Doe <br /><strong>Founder & CEO</strong></h2>
                             
                         </div>
@@ -142,7 +142,7 @@ function LandingPage(){
                     <div className={style.teamMember}>
 
                         <div className={style.topArrange}>
-                            <img src="/images/team2.avif" alt="Team Member 2" />
+                            <img src="/images/team2.avif" loading="lazy" alt="Team Member 2" />
                             <h2>John Smith <br/><strong>Creative Director</strong></h2>
                             
                         </div>
@@ -152,7 +152,7 @@ function LandingPage(){
 
                     <div className={style.teamMember}>
                         <div className={style.topArrange}>
-                            <img src="/images/team3.avif" alt="Team Member 3" />
+                            <img src="/images/team3.avif" loading="lazy" alt="Team Member 3" />
                             <h2>Alice Johnson <br /><strong>Head of Design</strong></h2>                        
                         </div>
                         <p>“From concept to your closet — we make sure KLADI delivers the vibe, every time.”</p>
@@ -160,7 +160,7 @@ function LandingPage(){
 
                     <div className={style.teamMember}>
                         <div className={style.topArrange}>
-                            <img src="/images/team4.avif" alt="Team Member 4" />
+                            <img src="/images/team4.avif" loading="lazy" alt="Team Member 4" />
                             <h2>Brianna Jules <br /><strong>Operations Manager</strong></h2>                        
                         </div>
                         <p>“Every piece we drop has meaning. We design for the streets, the moments, the mindset.”</p>
