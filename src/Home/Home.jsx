@@ -62,38 +62,38 @@ function Home() {
       <div className={styles.items}>
         
         <div className={styles.item} >
-          <img src="/src/assets/vintage jacket.jpg" alt="Item 1" />
+          <img src="/images/vintage jacket.jpg" alt="Item 1" />
           <h4>Vintage Jacket</h4>
           <p className={styles.pricing}>Ksh.850 <button className={styles.addToCart} onClick={(event) => handleCartItem(event)} >Add to cart</button></p> 
         </div>
         <div className={styles.item}>
-            <img src="/src/assets/sneakers(white).jpg" alt="Pre-owned White Sneakers" />
+            <img src="/images/sneakers(white).jpg" alt="Pre-owned White Sneakers" />
             <h4>Classic White Sneakers</h4>
             <p className={styles.pricing}>Ksh.1,200 <button className={styles.addToCart} onClick={(event) => handleCartItem(event)}>Add to cart</button></p>
         </div>
         <div className={styles.item}>
-            <img src="/src/assets/graphic-hoodie.jpg" alt="90s Band Hoodie" />
+            <img src="/images/graphic-hoodie.jpg" alt="90s Band Hoodie" />
             <h4>Oversized Graphic Hoodie</h4>
             <p className={styles.pricing}>Ksh.950 <button className={styles.addToCart} onClick={(event) => handleCartItem(event)}>Add to cart</button></p>
         </div>
         <div className={styles.item}>
-            <img src="/src/assets/denim-shorts.jpg" alt="Vintage Denim Shorts" />
+            <img src="/images/denim-shorts.jpg" alt="Vintage Denim Shorts" />
             <h4>Distressed Denim Shorts</h4>
             <p className={styles.pricing}>Ksh.850 <button className={styles.addToCart} onClick={(event) => handleCartItem(event)}>Add to cart</button></p>
         </div>
         <div className={styles.item}>
-            <img src="/src/assets/black-tshirts.jpg" alt="Basic Black Tees" />
+            <img src="/images/black-tshirts.jpg" alt="Basic Black Tees" />
             <h4>Black T-Shirts (3-Pack)</h4>
             <p className={styles.pricing}>Ksh.899 <button className={styles.addToCart} onClick={(event) => handleCartItem(event)}>Add to cart</button></p>
         </div>
         <div className={styles.item}>
-            <img src="/src/assets/track-jacket.jpg" alt="90s Track Jacket" />
+            <img src="/images/track-jacket.jpg" alt="90s Track Jacket" />
             <h4>Vintage Track Jacket</h4>
             <p className={styles.pricing}>Ksh.799 <button className={styles.addToCart} onClick={(event) => handleCartItem(event)}>Add to cart</button></p>
         </div>
         <div className={styles.item}>
             <div className={styles.toMore}>
-              <img src="/src/assets/store.avif" alt="90s Track Jacket" />
+              <img src="/images/store.avif" alt="90s Track Jacket" />
             <h4>View More</h4>
             <p className={styles.pricing}><Link to="/Shop"><button className={styles.shopBtn}>Shop</button></Link></p>
             </div>
