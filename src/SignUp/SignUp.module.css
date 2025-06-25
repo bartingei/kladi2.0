@@ -1,0 +1,64 @@
+.signUpForm{
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(35px);
+    text-align: center;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+    background-color: rgba(255,255,255,0.2);
+}
+.signUpBody{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('/src/assets/cartBg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.signUpForm h2{
+    margin-top: 50px;
+}
+.signUpForm label{
+    padding: 15px 20px;
+    font-size: 15px;
+}
+.signUpForm input{
+    height: 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 7px;
+    width: 250px;
+    padding: 10px;
+}
+.signUpForm a{
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    font-size:12px;
+    transition: .3s ease;
+}
+.signUpForm a:hover{
+    color: rgb(98, 168, 253);
+    
+}
+.signUpForm button{
+    width: 25%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 30px;
+    transition: 0.5s ease;
+}
+.signUpForm button:hover{
+    background-color:rgb(98, 168, 253) ;
+}
