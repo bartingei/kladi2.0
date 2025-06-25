@@ -3,7 +3,7 @@ import React , {useState} from 'react'
 import { BrowserRouter as Router, Route, Routes,Navigate } from 'react-router-dom'
 import Homepage from './Home/Home';
 import Shop from './Shop/Shop';
-import About from './About/About';
+//import About from './About/About';
 import Contact from './Contact/Contact';
 import Cart from './Cart/Cart'
 import Login from './Login/Login'
@@ -24,7 +24,9 @@ function App() {
         {/* Protected Routes (only after login) */}
   <Route path="/home" element={isAuthenticated ? <Homepage /> : <Navigate to="/login" />} />
   <Route path="/shop" element={isAuthenticated ? <Shop /> : <Navigate to="/login" />} />
-  <Route path="/about" element={isAuthenticated ? <About /> : <Navigate to="/login" />} />
+  {
+    //<Route path="/about" element={isAuthenticated ? <About /> : <Navigate to="/login" />} />
+  }
   <Route path="/contact" element={isAuthenticated ? <Contact /> : <Navigate to="/login" />} />
   <Route path="/cart" element={isAuthenticated ? <Cart /> : <Navigate to="/login" />} />
 

@@ -63,7 +63,7 @@ nav ul li a:hover{
     background-attachment: fixed;
     width: 100%;
     box-sizing: border-box;
-    min-height: 50vh;
+    min-height: 80vh;
 }
 .welcome h1{
     font-size: 3em;

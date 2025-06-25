@@ -2,7 +2,7 @@ import styles from './Home.module.css';
 import { Link } from "react-router-dom";
 import React,{useState} from 'react'
 import Shop from '../Shop/Shop.jsx';  
-import About from '../About/About.jsx';
+//import About from '../About/About.jsx';
 import Contact from "../Contact/Contact.jsx"
 import Cart from '../Cart/Cart.jsx'
 import { FaFacebookF, FaTwitter, FaInstagram, FaPinterest, FaPaperPlane } from "react-icons/fa";
@@ -34,7 +34,9 @@ function Home() {
           <ul>
             <li><Link to="/home">Home</Link></li>
             <li><Link to="/shop">Shop</Link></li>
-            <li><Link to="/about">About us</Link></li>
+            {
+                    //<li><Link to="/about">About us</Link></li>
+            }
             <li><Link to="/contact">Contact</Link></li>
             <li><Link to="/cart">Cart</Link></li>
           </ul>
