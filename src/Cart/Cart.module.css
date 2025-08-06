@@ -1,21 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-.cartBody {
+
+.cartPage {
     font-family: 'Poppins', sans-serif;
     color: #000000;
-    text-align: center;
-    background-color: aliceblue;
 }
-nav{
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    top:0;
+    top: 0;
     position: fixed;
     left: 0;
     width: 100%;
@@ -24,25 +24,440 @@ nav{
     background: rgba(0,0,0,0.8);
     backdrop-filter: blur(5px);
 }
-nav ul{
+
+.navbar ul {
     list-style: none;
     display: flex;
     gap: 20px;
-    
 }
-nav h1{
-    color:rgb(223, 165, 19);
+
+.navbar h1 {
+    color: rgb(223, 165, 19);
 }
-nav ul li{
+
+.navbar ul li {
     display: inline-block;
 }
-nav ul li a{
+
+.navbar ul li a {
     text-decoration: none;
     color: rgb(223, 165, 19);
     font-weight: bold;
     transition: 0.3s ease-in-out;
 }
-nav ul li a:hover{
+
+.navbar ul li a:hover {
     color: rgb(255, 255, 255);
     text-decoration: underline;
 }
+
+.cartLink span {
+    background-color: rgb(223, 165, 19);
+    color: #000;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.8rem;
+    margin-left: 5px;
+}
+
+.cartContainer {
+    padding: 100px 20px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cartHeader {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: rgb(223, 165, 19);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.emptyCart {
+    text-align: center;
+    padding: 50px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+}
+
+.emptyCart p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.continueBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(190, 158, 16, 0.5);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    text-transform: uppercase;
+}
+
+.continueBtn:hover {
+    background-color: rgb(168, 126, 19);
+    transform: scale(1.05);
+}
+
+.cartContent {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@media (min-width: 992px) {
+    .cartContent {
+        flex-direction: row;
+    }
+}
+
+.cartItems {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cartItem {
+    display: flex;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cartItem:hover {
+    transform: scale(1.02);
+}
+
+.itemImageContainer {
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+}
+
+.itemImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.itemDetails {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.itemDetails h3 {
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.itemDetails p {
+    color: #333;
+}
+
+.quantityControl {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantityControl button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: rgba(190, 158, 16, 0.5);
+    color: #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.quantityControl button:hover {
+    background-color: rgb(168, 126, 19);
+}
+
+.quantityControl button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.quantityControl span {
+    min-width: 30px;
+    text-align: center;
+}
+
+.removeBtn {
+    align-self: flex-start;
+    padding: 5px 10px;
+    background-color: rgba(255, 0, 0, 0.7);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: 0.3s ease-in-out;
+    margin-top: auto;
+}
+
+.removeBtn:hover {
+    background-color: rgba(255, 0, 0, 0.9);
+    transform: scale(1.05);
+}
+
+.itemTotal {
+    font-weight: bold;
+    color: #000;
+    align-self: center;
+    margin-left: auto;
+}
+
+.cartSummary {
+    flex: 1;
+    background-color: rgba(255,255,255,0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+    height: fit-content;
+}
+
+.cartSummary h2 {
+    color: rgb(223, 165, 19);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.summaryRow {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.totalRow {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.checkoutBtn {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(34, 192, 103, 0.7);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: 0.3s ease-in-out;
+    text-transform: uppercase;
+}
+
+.checkoutBtn:hover {
+    background-color: rgb(24, 124, 66);
+    transform: scale(1.05);
+}
+
+/* Footer styles (same as your other pages) */
+.footer {
+    z-index: 1000;
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: blur(5px);
+    color: white;
+    margin-top: 150px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    position: relative;
+}
+
+.container {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: rgb(223, 165, 19);
+}
+
+.text {
+    color: #d1d5db;
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link {
+    color: #d1d5db;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #ffffff;
+}
+
+.socials {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+.subscribe {
+    margin-top: 1rem;
+}
+
+.subscribeForm {
+    margin-top: 0.5rem;
+    display: flex;
+}
+
+.emailInput {
+    padding: 0.5rem 0.75rem;
+    border-top-left-radius: 0.375rem;
+    border-bottom-left-radius: 0.375rem;
+    color: #1f2937;
+    flex: 1;
+    border: none;
+    outline: none;
+}
+
+.sendButton {
+    background-color: #4f46e5;
+    padding: 0.5rem 1rem;
+    border-top-right-radius: 0.375rem;
+    border-bottom-right-radius: 0.375rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.sendButton:hover {
+    background-color: #4338ca;
+}
+
+.copyright p {
+    border-top: 1px solid #374151;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    text-align: center;
+    color: #ffffff;
+}
+/* M-Pesa Payment Section Styles */
+.mpesaSection {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: rgba(223, 165, 19, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(223, 165, 19, 0.3);
+}
+
+.mpesaSection h3 {
+  color: rgb(223, 165, 19);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.phoneInput {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.phoneInput label {
+  font-weight: bold;
+  color: #333;
+}
+
+.phoneField {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.phoneField:focus {
+  outline: none;
+  border-color: rgb(223, 165, 19);
+  box-shadow: 0 0 0 2px rgba(223, 165, 19, 0.2);
+}
+
+.errorText {
+  color: #e74c3c;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  text-align: center;
+}
+
+/* Checkout Success Styles */
+.checkoutSuccess {
+  text-align: center;
+  padding: 50px 20px;
+  max-width: 600px;
+  margin: 100px auto 50px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.checkoutSuccess h2 {
+  color: #27ae60;
+  margin-bottom: 20px;
+}
+
+.checkoutSuccess p {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+/* Disabled button state */
+.checkoutBtn:disabled {
+  background-color: #95a5a6 !important;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
